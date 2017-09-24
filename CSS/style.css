@@ -13,15 +13,13 @@ body{
   
   //border-width: 5px;
 }
-#icon-box{
-  
-}
 #weather{
   width: 500px;
   height: 500px;
   border: none;
 }
 #clock{
+  font: 100 8em lato;
   color: white;
 }
 #window{
@@ -29,4 +27,39 @@ body{
   width: 80%;
   height: 80%;
   border: none;
-}d
+}
+.icon-left{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.icon-right{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.icon-bar{
+}
+.icon-box{
+  background-color: #101521;
+  color: white;
+  height:  75px;
+  padding-top: 15px;
+}
+
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: blue;
+}
