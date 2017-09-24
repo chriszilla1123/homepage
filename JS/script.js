@@ -6,6 +6,7 @@ function getTime(){
   var time = new Date();
   var h = fixTime(time.getHours() % 12);
   var m = fixTime(time.getMinutes());
+  if(h == '00') h = '12';
   var prettyTime = (h + ":" + m);
   
   function fixTime(brokenTime){
@@ -21,11 +22,10 @@ function getTime(){
 
 $(document).ready(function(){
   setInterval(getTime, 1000)
-  $("#test").click(function(){
-    //$("#window").attr("src", "../../freeCodeCamp/weatherApp/index.html");
-    $("#window").attr("src", "https://www.chilltec.net/glances");
+  $("#link1").click(function(){
+    $("#window").attr("src", "https://www.chilltec.net/ampache/");
   });
-  $("#test2").click(function(){
-    $("#window").attr("src", "");
+  $("#link3").click(function(){
+    $("#window").attr("src", "http://www.chilltec.net:61208/");
   });
 });
