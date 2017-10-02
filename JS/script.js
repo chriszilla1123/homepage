@@ -40,7 +40,10 @@ $(document).ready(function(){
   
   setInterval(getTime, 1000)
   $("#link1").click(function(){
-    if(loaded1 === false) $("#window1").attr("src", link1);
+    if(loaded1 === false) {
+      $("#window1").attr("src", link1);
+      loaded1 = true;
+    }
     $("#window1").css("zIndex", 10)
     $("#window2").css("zIndex", 1)
     $("#window3").css("zIndex", 1)
