@@ -22,8 +22,8 @@ function getTime(){
 $(document).ready(function(){
   //Set Links
   var link1 = "https://www.chilltec.net/ampache/";
-  var link2 = "http://www.chilltec.net:8112/";
-  var link3 = "http://www.chilltec.net:61208/";
+  var link2 = "http://www.chilltec.net/";
+  var link3 = "http://www.chilltec.net/";
   var link4 = "http://www.plex.tv/web";
   var link5;
   var link6;
@@ -50,21 +50,30 @@ $(document).ready(function(){
     //$("#window4").css("zIndex", 1)
   });
   $("#link2").click(function(){
-    if(loaded2 === false) $("#window2").attr("src", link2);
+    if(loaded2 === false) {
+      $("#window2").attr("src", link2);
+      loaded2 = true;
+    }
     $("#window1").css("zIndex", 1)
     $("#window2").css("zIndex", 10)
     $("#window3").css("zIndex", 1)
     //$("#window4").css("zIndex", 1)
   });
   $("#link3").click(function(){
-    if(loaded3 === false) $("#window3").attr("src", link3);
+    if(loaded3 === false) {
+      $("#window3").attr("src", link3);
+      loaded1 = true;
+    }
     $("#window1").css("zIndex", 1)
     $("#window2").css("zIndex", 1)
     $("#window3").css("zIndex", 10)
     //$("#window4").css("zIndex", 1)
   });
   $("#link4").click(function(){
-    //if(loaded4 === false) $("#window4").attr("src", link4);
+    /*if(loaded1 === false) {
+      $("#window1").attr("src", link1);
+      loaded1 = true;
+    }*/
     //$("#window1").css("zIndex", 1)
     //$("#window2").css("zIndex", 1)
     //$("#window3").css("zIndex", 1)
