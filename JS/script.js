@@ -22,8 +22,8 @@ function getTime(){
 $(document).ready(function(){
   //Set Links
   var link1 = "https://www.chilltec.net/ampache/";
-  var link2 = "http://www.chilltec.net/";
-  var link3 = "http://www.chilltec.net/";
+  var link2 = "https://www.chilltec.net/";
+  var link3 = "https://www.chilltec.net/";
   var link4 = "http://www.plex.tv/web";
   var link5;
   var link6;
