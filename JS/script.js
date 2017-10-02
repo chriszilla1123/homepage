@@ -23,9 +23,9 @@ $(document).ready(function(){
   //Set Links
   var link1 = "https://www.chilltec.net/ampache/";
   var link2 = "https://www.chilltec.net/";
-  var link3 = "https://www.chilltec.net/";
+  var link3 = "https://www.chilltec.net/projects/weatherApp/";
   var link4 = "http://www.plex.tv/web";
-  var link5;
+  var link5 = "https://www.chilltec.net/projects/weatherApp/";
   var link6;
   var link7;
   var link8;
