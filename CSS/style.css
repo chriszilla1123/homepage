@@ -22,11 +22,45 @@ body{
   font: 100 8em lato;
   color: white;
 }
+#view-screen{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  padding-right: 75%;
+}
 #window{
   position: relative;
   width: 80%;
   height: 80%;
   border: none;
+}
+#window1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 8;
+}
+#window2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 6;
+}
+#window3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 4;
+}
+#window4{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 10;
 }
 .icon-left{
   border-top-left-radius: 10px;
