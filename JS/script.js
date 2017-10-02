@@ -29,30 +29,39 @@ $(document).ready(function(){
   var link6;
   var link7;
   var link8;
+  var loaded1 = false;
+  var loaded2 = false;
+  var loaded3 = false;
+  var loaded4 = false;
+  var loaded5 = false;
+  var loaded6 = false;
+  var loaded7 = false;
+  var loaded8 = false;
+  
   setInterval(getTime, 1000)
   $("#link1").click(function(){
-    $("#window1").attr("src", link1);
+    if(loaded1 === false) $("#window1").attr("src", link1);
     $("#window1").css("zIndex", 10)
     $("#window2").css("zIndex", 1)
     $("#window3").css("zIndex", 1)
     //$("#window4").css("zIndex", 1)
   });
   $("#link2").click(function(){
-    $("#window2").attr("src", link2);
+    if(loaded2 === false) $("#window2").attr("src", link2);
     $("#window1").css("zIndex", 1)
     $("#window2").css("zIndex", 10)
     $("#window3").css("zIndex", 1)
     //$("#window4").css("zIndex", 1)
   });
   $("#link3").click(function(){
-    $("#window3").attr("src", link3);
+    if(loaded3 === false) $("#window3").attr("src", link3);
     $("#window1").css("zIndex", 1)
     $("#window2").css("zIndex", 1)
     $("#window3").css("zIndex", 10)
     //$("#window4").css("zIndex", 1)
   });
   $("#link4").click(function(){
-    //$("#window4").attr("src", link4);
+    //if(loaded4 === false) $("#window4").attr("src", link4);
     //$("#window1").css("zIndex", 1)
     //$("#window2").css("zIndex", 1)
     //$("#window3").css("zIndex", 1)
